@@ -12,9 +12,8 @@ I have learn that sharing and teaching is a good way to self-improve, and I am d
 
 ### Mini Tutorial Series
 - [miniMardownTutorial](https://github.com/jlomeli71/miniMdTutorial)
-- miniGitTutorial
-- miniPythonTutorial
-- miniSQLTutorial
+- [miniGitTutorial](https://github.com/jlomeli71/miniGitTutorial)
+- [miniPythonTutorial](https://github.com/jlomeli71/miniPythonTutorial)
 
 ### Web Apps 
 
