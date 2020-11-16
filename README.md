@@ -8,7 +8,8 @@ I have also for years been interested in software development and automation, an
 
 I have upload my notes that gradually will become Tutorials.
 ### My personal Notes
-- [Markdown Notes]()
-- [Git Notes]()
-- [Python Notes]()
-- [Web Development Notes]()
+- [Markdown Notes](https://github.com/jlomeli71/md-notes)
+- [Git Notes](https://github.com/jlomeli71/git-notes)
+- [Python Notes](https://github.com/jlomeli71/python-notes)
+- [Web Development Notes](https://github.com/jlomeli71/web-dev-notes)
+
