@@ -11,5 +11,5 @@ I have upload my notes that gradually will become Tutorials.
 - [Markdown Notes](https://github.com/jlomeli71/md-notes)
 - [Git Notes](https://github.com/jlomeli71/git-notes)
 - [Python Notes](https://github.com/jlomeli71/python-notes)
-- [Web Development Notes](https://github.com/jlomeli71/web-dev-notes)
+- [Web Dev Notes](https://github.com/jlomeli71/webdev-notes)
 
