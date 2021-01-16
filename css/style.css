@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    text-align: center;
+    color: #0f3057
+}
+
+h1 {
+    margin: 0 auto 0 auto;
+    font-size: 4em;
+    color: #0f3057;
+    
+}
+
+h2 {
+    margin: 0 auto 0 auto;
+    font-size: 3em;
+    color: #0f3057;
+}
+
+h3 {
+    margin: 0 auto 0 auto;
+    font-size: 2em;
+    color: #0f3057;
+}
+
+.top-container {
+    background-color: #008891;
+}
+
+.middle-container {
+    background-color: #e7e7de;
+}
+
+.bottom-container {
+    background-color: #00587a;
+}
+
+hr {
+    border: dotted  #008891 3px;
+    border-bottom: none;
+}
+
+a {
+    ;
+}
+
+a:hover {
+    ;
+}
