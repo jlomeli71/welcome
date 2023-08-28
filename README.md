@@ -6,10 +6,3 @@ I have worked for international leading companies in Mexico and Latin America.
 I am pasionate about learning, and continuously self-improve and learn new technologies to maintain technical leadership on my daily job activities.
 I have also for years been interested in software development and automation, and it has become more than a casual hobby.
 
-I have upload my notes that gradually will become Tutorials.
-### My personal Notes
-- [Markdown Notes](https://github.com/jlomeli71/md-notes)
-- [Git Notes](https://github.com/jlomeli71/git-notes)
-- [Python Notes](https://github.com/jlomeli71/python-notes)
-- [Web Dev Notes](https://github.com/jlomeli71/webdev-notes)
-
