@@ -3,111 +3,306 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jose Lomeli Personal Site</title>
+    <title>My Personal Page</title>
+    <!--    Bootstrap 5                 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--    Google fonts                -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Bricolage+Grotesque:opsz@10..48&family=Edu+SA+Beginner&family=Kalam&family=Lato&display=swap" rel="stylesheet">
+    <!--    Iconscout CDN library   -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!--    Custom CSS                  -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    <table class="table table-light" cellspacing=20>
-        <tbody>
-            <tr>
-                <td><img src="images/jlomeli.png" alt="photo" width="300" height="400"></td>
-                <td>
+
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="education.html">Education</a>
+              </li>
+              <li class="nav-item" >
+                <a class="nav-link" href="portafolio.html">Portafolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container my-md-5">
+
+        <header id="personalInfo" class="centrado">
+            <div class="row align-items-center">
+                <div class="col-md-8">
                     <h1>Jose Manuel Lomeli Corona</h1>
-                    <h2><em>Network Solutions Architect</h2></p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+                    <h3>Mexico City, Mexico</h3>
+                    <h3>CCIE # 3803</h3>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/mypicture.jpg" alt="My Photo" width="50%">
+                </div>
+            </div>
+        </header>
 
-    <hr>
-    <h3>SUMMARY</h3>
-    <p>Network Solution Architect with over 20 years of experience in large Enterprise and Service Provider networks. Strong knowledge and solid hands-on experience with IPv4, IPv6, OSPF, ISIS, BGP, MPLS, LDP, RSVP, SR, L3 VPN, L2 VPN, QoS, Multicast, in diverse deployments scenarios from IP Access to IP Core, and Data Center solutions. Experience in design, planning, optimization and implementation and project management.</p>
-    <p>I have worked for international leading companies such as Cisco, Juniper, Huawei and TechMahindra in Mexico and Latin America, in different service provider customers like Uninet, Telcel, Tigo, Digicel, Claro, AT&T, etc.</p> 
-    <p>Continuous self-improvement and learning to maintain technical leadership of applicable technologies (Data Center, SDN, Private and Public Cloud, Security Solutions, Automation, etc.)</p>
-    <hr>
-    <h3>PROFESSIONAL EXPERIENCE (November 2016 - Present)</h3>
-    
-    <p>Tech Lead Architect for AT&T Mexico</p> 
-    <p>Lead the IP Architects team in ATT Planning department.</p> 
-    <ul>
-        <li>Defined requirements for new solutions for IP Architectures (ISP, IP Core, IP Backhaul) and Data Center.</li>
-        <li>Collaborated with vendors to develop High Level Design, Low-Level Designs and Proof of Concept labs.</li>
-        <li>Defined strategies for migrations to new architectures and technologies.</li>
-        <li>Technologies: ISIS, BGP, MPLS, SR, RSVP TE, L2L3 VPN, IPv6, QoS, SDN and Edge Cloud NFVs. </li>
-        <li>Evaluated and tested products from vendors: Cisco, Juniper, Huawei, Arista, Nokia and others.</li>
-        <li>Participated in vendor selection process for private Cloud project aimed at providing Telco services for ATT. Defined long-term adoption strategies and designs.</li>
-    </ul>
+        <section id="myProfile">
+            <div class="row my-3">
+                <h2>Profile Sumary</h2>
+                <p>Senior Network Architect with over 20 years of experience in Large Enterprise and Service Provider Networks.
+                Experienced in designing, planning, optimizing, implementing as a team member, and leading technical teams.
+                I have worked for internationally leading companies such as Cisco, Juniper, Huawei, and Tech Mahindra, supporting projects in Mexico and Latin America. Capable of adapting to customer culture, project requirements, and new technology demands.</p>
+            </div>
+        </section>
 
-    Huawei Technologies Mexico		 			            October 2013 - November 2016
+        <hr class="divisionPrincipal">
+        <div class="row nuevaSeccion">
+            <h2>Professional Experience</h2>
+        </div>
 
-Service and Delivery Datacom Expert for North Latin America Region
-In charge of providing support to post and pre sales services to Huawei service provider customers.
-•	Developed High Level Design definition and Low-Level Designs for IP Core and IP Backhaul solutions.
-•	Performed Network Analysis and Optimization Services for MPLS and IP Backhaul networks.
-•	Network Migration Planning for IP Core and IP Backhaul network to Huawei products. 
-•	Supported projects in Mexico, Ecuador, Salvador, Honduras, Trinidad, Bolivia, Colombia, Chile, and Guatemala for several companies: Telcel Mexico, Claro, Digicel, Entel (Bolivia), WOM (Chile), and TIGO.
-•	Technologies: OSPF, ISIS, BGP, MPLS, VPN L3 and VPN L2, RSVP TE, IP RAN (HVPN and Seamless), Metro Ethernet, Multicast, IPv6, QoS, Firewalls, SDN, among others. 
-•	Supported products: Huawei NE40E, CX600, ATN, S9300, Eudemon1000 Series products.
+        <div class="row compania">
+            <h4>Techmahindra Mexico</h4>
+        </div>
+        <div class="row">
+            <div class="col-md-8 posicion">
+                <h5>Tech Lead Architect in AT&T Mexico</h5>
+            </div>
+            <div class="col-md-4 periodo">
+                <h5>November 2016 to <span id="mesAnio">mesAnio</span></h5>
+            </div>
+        </div>
 
-Cisco Systems de Mexico		 					    July 2011 - September 2013
+        <div class="row">
+            <div class="col-md-8 responsabilidades">
+                <p>Responsabilities:</p>
+                <ul>
+                    <li>Lead a highly skilled technical team mostly composed of Cisco CCIE and Juniper JNCIE Architects.</li>
+                    <li>Defined requirements for new solutions for IP Architectures (ISP, IP Core, IP Backhaul), and Data Centers.</li>
+                    <li>Developed strategies for short and long-term migrations to new architectures and technologies.</li>
+                    <li>Collaborated with vendors to develop High-Level Designs, Low-Level Designs, and Proof of Concept labs.</li>
+                    <li>Evaluated and tested products from vendors such as Cisco, Juniper, Huawei, Arista, Nokia, and others.</li>
+                    <li>Participated in the vendor selection process for a private Cloud project aimed at providing Telco services.</li>
+                    <li>Participated in projects that supported the launch of 5G services, Internet services and others.</li>
+                </ul>
+            </div>
+            <div class="col-md-4 tecnologias">
+                <p>Technologies:</p>
+                <ul>
+                    <li>OSPF, ISIS, BGP,</li>
+                    <li>MPLS, SR, RSVP TE, L2L3 VPN,</li>
+                    <li>IPv6, QoS, and SDN.</li>
+                </ul>
+            </div>
+        </div>
+<hr class="divisionSecundaria">
+<div class="row compania">
+    <h4>Huawei Technologies Mexico</h4>
+</div>
+<div class="row">
+    <div class="col-md-8 posicion">
+        <h5>Service and Delivery Datacom Expert for North Latin America Region</h5>
+    </div>
+    <div class="col-md-4 periodo">
+        <h5>October 2013 to November 2016</h5>
+    </div>
+</div>
 
-Network Consulting Engineer IV
-In charge of providing consulting and optimization services to Cisco account UNINET (America Movil).
-•	Participated in information gathering workshops with the Customer to understand the Customer’s existing network design and technical requirements.
-•	Conducted problem replication in customer lab and Cisco labs for IP Core and BRAS scenarios.
-•	Evaluated new features before implementation.
-•	Validated and developed configuration standards and policy configurations with customer’s design team.
-•	Supported technologies: OSPF, BGP, MPLS, L3 VPN, mVPN, BRAS, QoS, Netflow, CoPP, IPv6.
-•	Supported products: Cisco ASR9000, ASR1000, CRS-1, XR2000, GSR, C7600 Series products. 
+<div class="row">
+    <div class="col-md-8 responsabilidades">
+        <p>Responsabilities:</p>
+        <ul>
+            <li>Responsible for providing support to pre and post-sales services for Huawei service provider customers.</li>
+            <li>Lead technical teams in the deployment and migration of new network solutions.</li>
+            <li>Developed High-Level Designs and Low-Level Designs for IP Core and IP Backhaul solutions.</li>
+            <li>Performed Network Analysis and Optimization Services for MPLS and IP Backhaul networks.</li>
+        </ul>
+    </div>
+    <div class="col-md-4 tecnologias">
+        <p>Technologies:</p>
+        <ul>
+            <li>OSPF, ISIS, BGP,</li>
+            <li>MPLS, VPN L3 and VPN L2, RSVP TE, IP RAN (HVPN and Seamless),</li>
+            <li>Metro Ethernet, Multicast, IPv6, QoS,</li>
+            <li>Firewalls, SDN, among others.</li>
+        </ul>
+    </div>
+</div>
+<hr class="divisionSecundaria">
+<div class="row compania">
+    <h4>Cisco Systems de Mexico</h4>
+</div>
+<div class="row">
+    <div class="col-md-8 posicion">
+        <h5>Network Consulting Engineer IV</h5>
+    </div>
+    <div class="col-md-4 periodo">
+        <h5>July 2011 to September 2013</h5>
+    </div>
+</div>
 
-Juniper Networks de Mexico						       January 2010 – June 2011
+<div class="row">
+    <div class="col-md-8 responsabilidades">
+        <p>Responsabilities:</p>
+        <ul>
+            <li>Responsible for providing consulting and optimization services to Cisco account UNINET (America Movil).</li>
+            <li>Participated in information gathering workshops with the Customer to understand the Customer's existing network design and technical requirements.</li>
+            <li>Conducted problem replication in customer labs and Cisco labs for IP Core and BRAS scenarios.</li>
+        </ul>
+    </div>
+    <div class="col-md-4 tecnologias">
+        <p>Technologies:</p>
+        <ul>
+            <li>OSPF, BGP,</li>
+            <li>MPLS, L3 VPN, mVPN,</li>
+            <li>BRAS</li>
+            <li>QoS, Netflow, CoPP, IPv6, etc.</li>
+        </ul>
+    </div>
+</div>
+<hr class="divisionSecundaria">
+<div class="row compania">
+    <h4>Juniper Networks de Mexico</h4>
+</div>
+<div class="row">
+    <div class="col-md-8 posicion">
+        <h5>Resident Engineer</h5>
+    </div>
+    <div class="col-md-4 periodo">
+        <h5>January 2010 to June 2011</h5>
+    </div>
+</div>
 
-Resident Engineer
-In charge of providing support and operation services to Juniper UNINET (America Movil) account. 
-•	Troubleshoot equipment and network problems and tracked JTAC cases through to problem resolution.
-•	Conducted technology workshops with the customer to discuss equipment and network problems, provided case status updates, including the reasons for any problems encountered and the solutions.
-•	Trained the customer’s implementation and support personnel to configure and operate Juniper products.
-•	Assisted the customer to develop Network Operating and Equipment Operating Procedures.
-•	Performed lab testing evaluation for new features and products with Junos and JunosE operating systems.
-•	Supported technologies: OSPF, BGP, MPLS, L3 VPN, QoS, BRAS, PPPoE, PPPoA.
-•	Supported products: Juniper E, M, J, and EX Series products.
-NEXTIRAONE de Mexico							   Mexico 1995 – 2009
+<div class="row">
+    <div class="col-md-8 responsabilidades">
+        <p>Responsabilities:</p>
+        <ul>
+            <li>Responsible for providing support and operational services to UNINET (America Movil) account.</li>
+            <li>Troubleshot equipment and network problems and tracked JTAC cases through to problem resolution.</li>
+            <li>Conducted technology workshops with the customer to discuss equipment and network problems, provided case status updates, including the reasons for any problems encountered and the solutions.</li>
+            <li>Technologies:</li>
+            </ul>
+    </div>
+    <div class="col-md-4 tecnologias">
+        <p>Technologies:</p>
+        <ul>
+            <li>OSPF, BGP,</li>
+            <li>MPLS, L3 VPN,</li>
+            <li>QoS, and BRAS.</li>
+        </ul>
+    </div>
+</div>
+<hr class="divisionSecundaria">
+<div class="row compania">
+    <h4>NextiraOne de Mexico</h4>
+</div>
+<div class="row">
+    <div class="col-md-8 posicion">
+        <h5>Professional Services Engineer</h5>
+    </div>
+    <div class="col-md-4 periodo">
+        <h5>May 1999 to December 2009</h5>
+    </div>
+</div>
 
-Professional Services Engineer 								1999 - 2009
-In charge of providing support to post sales and pre-sales engineers and conducted the planning and implementation of emerging technologies. 
-•	Performed network analysis and performance evaluation for major customers, providing recommendations to optimize their infrastructure, configuration standardization, and operation recommendations.
-•	Supported Cisco Datacenter products as Nexus switches, load balancers, WAAS, and firewalls. 
-•	Performed security hardening audits and introduced customers to security policy awareness.
-•	Implemented DWDM/SDH networks with Cisco ONS 15454, 15540 and 15530 products.
-•	Designed and implemented MPLS networks with L3 VPN, and QoS features.
-•	Evaluated new Cisco technologies in IP Telephony, VoIP, and Video over an MPLS network.
-	Network Engineer 									1996 to 1999
-In charge of providing support to post sales engineers and implemented the biggest projects in the company. 
-•	Responsible of the operation of customers with StrataCom (later Cisco) equipment. Each of these customers used IPX and IGX StrataCom switches, Fast Pads frads, Cisco and Bay Networks routers. Prepared new engineers in WAN Switching technologies.
-•	Led projects and implemented big corporate networks with ATM and Frame Relay technologies. 
-	
-	Network Operator 										1996
-In charge of providing support the operation of a Public Data Network (InterVAN). This network used to provide Internet access to more than 100 customers through a connection to UUNET and also provided connectivity needs to regional offices in Mexico and the US. Now is part of UNINET (America Movil) network.
-•	Added new customers to this network. These responsibilities included: coordination with technical staff of WorldCom for international connections, evaluate requirements and access design for customer networks.
-•	Configured and installed Cisco, HP, and Nortel (Bay Networks) routers in the customer premises. The configuration of these routers included IP, IPX, Static Routes, RIP, and EIGRP.
-•	Coordinated compatibility test with other Frame Relay vendor equipment (New Bridge and Cascade) for integration with existing Frame Relay networks in the premises of the customer.
+<div class="row">
+    <div class="col-md-8 responsabilidades">
+        <p>Responsabilities:</p>
+        <ul>
+            <li>Responsible for providing support to post-sales and pre-sales engineers.</li>
+            <li>Led the planning and implementation phases of projects with new and emerging technologies.</li>
+            <li>Prepared and led technical teams in the deployment and migration of new network solutions.</li>
+            <li>Performed network analysis and performance evaluation for major customers, providing recommendations to optimize their infrastructure, standardize configurations, enhance security, etc.</li>
+            <li>Designed and implemented MPLS networks with L3 VPN and QoS features.</li>
+        </ul>
+    </div>
+    <div class="col-md-4 tecnologias">
+        <p>Technologies:</p>
+        <ul>
+            <li>OSPF, EIGRP, BGP</li>
+            <li>IPv6</li>
+            <li>DWDM</li>
+            <li>FirewallsS</li>
+        </ul>
+    </div>
+</div>
 
-    <hr>
-    <h3>EDUCATION</h3>
-    <ul>
-        <li><strong>Engineer in Electronic and Communications (1989 - 1994)</strong><br><em>Instituto Politecnico Nacional, Mexico City, Mexico</em></li>
-        <li><strong>Master in Information Technology Administration (2009 - 2011)</strong><br><em>Universidad de las Americas Puebla,  Cholula City, Mexico</em></li>
-    </ul>	
+<div class="row">
+    <div class="col-md-8 posicion">
+        <h5>Network Engineer</h5>
+    </div>
+    <div class="col-md-4 periodo">
+        <h5>February 1996 to April 1999</h5>
+    </div>
+</div>
 
-PROFESSIONAL CERTIFICATIONS
-Cisco IOS-XR Specialist (2012) 
-CCIE in Routing and Switching No. 3803 (passed lab exam twice, on 1998 and 2008)
-Cisco Data Center Networking Infrastructure and Data Center Application Support Specialist (2008)
-Past certifications: Cisco CCNA, CCNP, CCIP, CCDP, CCSP, Nortel Router Specialist 
+<div class="row">
+    <div class="col-md-8 responsabilidades">
+        <p>Responsabilities:</p>
+        <ul>
+            <li>Responsible for providing support to post-sales engineers and implementing major projects in the company.</li>
+            <li>Led projects and implemented large corporate networks with ATM and Frame Relay technologies.</li>
+            </ul>
+    </div>
+    <div class="col-md-4 tecnologias">
+        <p>Technologies:</p>
+        <ul>
+            <li>OSPF, EIGRP, BGP</li>
+            <li>DWDM</li>
+            <li>FirewallsS</li>
+        </ul>
+    </div>
+</div>
 
-ADDITIONAL SKILLS
-Linux, Python, and Ansible.
+<div class="row">
+    <div class="col-md-8 posicion">
+        <h5>Network Operator</h5>
+    </div>
+    <div class="col-md-4 periodo">
+        <h5>February 1995 to January 1996</h5>
+    </div>
+</div>
 
-<a href="https://github.com/jlomeli71">My GIT Project Reporistory</a>
+<div class="row">
+    <div class="col-md-8 responsabilidades">
+        <p>Responsabilities:</p>
+        <ul>
+            <li>Responsible for supporting the operation of a Public Data Network (InterVAN), now part of UNINET (America Movil) network.</li>
+            <li>Handled responsibilities such as coordinating with WorldCom's technical staff for international connections, evaluating requirements, and designing access for customer networks.</li>
+            <li>Supported the operation and maintenance of this network and its customers.</li>
+            <li>Trained and led new engineers to support the network.</li>           </ul>
+    </div>
+    <div class="col-md-4 tecnologias">
+        <p>Technologies:</p>
+        <ul>
+            <li>OSPF, EIGRP, BGP</li>
+            <li>ATM, Frame Relay</li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<footer>
+    <div class="centrado footer">
+        <a href="https://www.facebook.com/jose.lomeli.5074/"><img src="img/facebook.svg" alt="Facebook" width="2%"></a>
+        <a href="https://github.com/jlomeli71/"><img src="img/github.svg" alt="Github" width="2%"></a>
+        <a href="https://www.linkedin.com/in/jose-manuel-lomeli-corona-a1bb15/"><img src="img/linkedin.svg" alt="LinkedIn" width="2%"></a>    
+    </div>
+</footer>
+
+    <!--    Bootstrap JS    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="scr/script.js"></script>
 </body>
 </html>
+

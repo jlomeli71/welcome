@@ -1,0 +1,116 @@
+body {
+    background: #F9F7F7;
+    padding-top: 8%;
+}
+
+.navbar {
+    background: #3F72AF;
+}
+
+.nav-link {
+    color: #F9F7F7;
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 1.2rem;
+}
+
+.nav-link:visited {
+    color: #DBE2EF;
+}
+
+.nav-link:hover {
+    color: #112D4E;
+}
+
+.centrado {
+    text-align: center;
+    vertical-align: center;;
+}
+footer {
+    background: #3F72AF;
+    opacity: 0.5;
+    padding: 1% 0;
+}
+
+.footer a {
+    padding: 0 1%;
+}
+
+/*  Favorite Google fonts                           */
+/*                                                  */
+/*  font-family: 'Borel', cursive;                  */
+/*  font-family: 'Edu SA Beginner', cursive;        */
+/*  font-family: 'Kalam', cursive;                  */
+/*  font-family: 'Bricolage Grotesque', sans-serif; */
+/*  font-family: 'Lato', sans-serif;                */
+
+/*  Pallete Colors                                  */
+/*  https://colorhunt.co/palette/f9f7f7dbe2ef3f72af112d4e */
+/*  #112D4E                                         */
+/*  #3F72AF                                         */
+/*  #DBE2EF                                         */
+/*  #F9F7F7                                         */
+/*  https://colorhunt.co/palette/f4eeffdcd6f7a6b1e1424874 */
+/*  #424874                                         */
+/*  #A6B1E1                                         */
+/*  #DCD6F7                                         */
+/*  #F4EEFF                                         */
+/*  https://colorhunt.co/palette/d4ecdd345b63152d35112031 */
+/*  #112031                                         */
+/*  #152D35                                         */
+/*  #345B63                                         */
+/*  #D4ECDD                                         */
+/*  https://colorhunt.co/palette/f7fbfcd6e6f2b9d7ea769fcd */
+/*  #769FCD                                         */
+/*  #B9D7EA                                         */
+/*  #D6E6F2                                         */
+/*  #F7FBFC                                         */
+
+
+/* Font information                                 */
+/* Main header                                      */
+h1, h3 {
+    font-family: 'Kalam', cursive;
+    color: #112D4E;
+}
+
+/* Secondary headers, sections                       */
+h2, h4, h5 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: #112D4E;
+}
+
+p, li {
+    font-family: 'Lato', sans-serif;
+    color: #112D4E;
+    font-size: 1.1rem;
+}
+
+hr {
+    border: 1px solid #112D4E;
+  }
+
+hr.divisionSecundaria {
+    border: 0.8px dashed #112D4E;
+}
+
+.btn {
+    background: #3F72AF;
+    color: #F9F7F7;
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 1.2rem;
+    
+}
+
+.boton {
+    padding: 3%;
+}
+
+.btn:hover {
+    background: #112D4E;
+    color: #F9F7F7;
+    cursor: pointer;
+}
+
+img:hover {
+    opacity: 50%;
+}

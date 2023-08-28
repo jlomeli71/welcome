@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <!--    Iconscout CDN library   -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!--    Personalized CSS        -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--    Favicon -->
+    <link rel="shortcut icon" href="img/wow.ico" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <h2>My Favorite Gallery Topics on <a href="https://unsplash.com/">Unsplash</a></h2>
+
+        <ul class="categories">
+            <li><a class="category" href="../../index.html">Home</a></li>
+            <li><a class="category" href="https://unsplash.com/es/t/nature/">Nature</a></li>
+            <li><a class="category" href="https://unsplash.com/es/t/spirituality">Spirituallity</a></li>
+            <li><a class="category" href="https://unsplash.com/es/t/animals">Animals</a></li>
+            <li><a class="category" href="../../portafolio.html">Portafolio</a></li>
+        </ul>
+
+        <section class="galleries">
+            <article class="gallery">
+                <div class="gallery__images">
+                    <div class="gallery__images-thumbnail">
+                        <img onclick="cambiaFotoNature()" src="img/nature1.jpg" alt="Nature Photo Main">
+                    </div>
+                    <div class="gallery__images-more">
+                        <div><img onclick="changePicture" src="img/nature2.jpg" alt="Nature Photo"></div>
+                        <div><img onclick="changePicture" src="img/nature3.jpg" alt="Nature Photo"></div>
+                        <div><img onclick="changePicture" src="img/nature4.jpg" alt="Nature Photo"></div>
+                    </div>
+                </div>
+                <div class="gallery__info">
+                    <p>Nature</p>
+                </div>
+
+            </article>
+
+            <article class="gallery">
+                <div class="gallery__images">
+                    <div class="gallery__images-thumbnail">
+                        <img src="img/spirituallity1.jpg" alt="Spirituallity Photo Main">
+                    </div>
+                    <div class="gallery__images-more">
+                        <div><img src="img/spirituallity2.jpg" alt="Spirituallity Photo"></div>
+                        <div><img src="img/spirituallity3.jpg" alt="Spirituallity Photo"></div>
+                        <div><img src="img/spirituallity4.jpg" alt="Spirituallity Photo"></div>
+                    </div>
+                </div>
+                <div class="gallery__info">
+                    <p>Spirituality</p>
+                </div>
+
+            </article>
+
+            <article class="gallery">
+                <div class="gallery__images">
+                    <div class="gallery__images-thumbnail">
+                        <img src="img/animals1.jpg" alt="Animals Main Photo">
+                    </div>
+                    <div class="gallery__images-more">
+                        <div><img src="img/animals2.jpg" alt="Animals Photo"></div>
+                        <div><img src="img/animals3.jpg" alt="Animals Photo"></div>
+                        <div><img src="img/animals4.jpg" alt="Animals Photo"></div>
+                    </div>
+                </div>
+                <div class="gallery__info">
+                    <p>Animals</p>
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

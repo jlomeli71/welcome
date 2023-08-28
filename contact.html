@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page</title>
+    <!--    Bootstrap 5                 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--    Google fonts                -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Bricolage+Grotesque:opsz@10..48&family=Edu+SA+Beginner&family=Kalam&family=Lato&display=swap" rel="stylesheet">
+    <!--    Custom CSS                  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="education.html">Education</a>
+              </li>
+              <li class="nav-item" >
+                <a class="nav-link" href="portafolio.html">Portafolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container my-md-5">
+
+      <div class="row">
+        <div class="col-md-2 col-lg-4 d-none d-md-block">
+        <!-- Just to provide space -->  
+        </div>
+
+        <div class="col-md-8 col-lg-4">
+
+          <!-- Form body beginning -->
+          <h1 class="centrado">Contact me</h1>
+          <!--Section description-->
+          <h3 class="centrado">Do you want to contact me? Leave me a message.</h3>
+          <form id="contact-form" name="contact-form" action="#" method="POST">
+          
+          <label for="name" class="">Your name</label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+          
+          <label for="email" class="">Your email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+          
+          <label for="message">Your message</label>
+          <textarea type="text" id="message" name="message" rows="5" cols="60" class="form-control" placeholder="Enter your message" required></textarea>
+          </form>
+          <div class="boton centrado">
+          <button type="button" class="btn">Send</button>
+          </div>
+          <!-- Form body end -->
+
+        </div>
+
+        <div class="col-md-2 col-lg-4 d-none d-md-block">
+          <!-- Just to provide space -->  
+        </div>
+  
+    </div>
+
+
+
+
+
+      
+    </div>
+    <footer>
+        <div class="centrado footer">
+            <a href="https://www.facebook.com/jose.lomeli.5074/"><img src="img/facebook.svg" alt="Facebook" width="2%"></a>
+            <a href="https://github.com/jlomeli71/"><img src="img/github.svg" alt="Github" width="2%"></a>
+            <a href="https://www.linkedin.com/in/jose-manuel-lomeli-corona-a1bb15/"><img src="img/linkedin.svg" alt="LinkedIn" width="2%"></a>    
+        </div>
+    </footer>
+
+    <!--    Bootstrap JS    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="scr/script.js"></script>
+</body>
+</html>
