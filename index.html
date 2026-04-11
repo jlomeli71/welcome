@@ -1217,6 +1217,132 @@
       color: #fb7185;
     }
 
+    /* ============================================================
+       CERTIFICATIONS SECTION
+    ============================================================ */
+    .certs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .cert-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cert-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      transform: scaleX(0);
+      transition: transform var(--transition);
+    }
+
+    .cert-card:hover {
+      border-color: rgba(56,189,248,0.22);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card);
+    }
+
+    .cert-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .cert-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .cert-card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .cert-icon-gold  { background: rgba(251,191,36,0.1); border: 1px solid rgba(251,191,36,0.25); color: #fbbf24; }
+    .cert-icon-blue  { background: rgba(99,102,241,0.1); border: 1px solid rgba(99,102,241,0.25); color: #818cf8; }
+    .cert-icon-green { background: rgba(34,197,94,0.1);  border: 1px solid rgba(34,197,94,0.25);  color: #4ade80; }
+    .cert-icon-sky   { background: rgba(56,189,248,0.1); border: 1px solid rgba(56,189,248,0.25); color: #38bdf8; }
+    .cert-icon-purple{ background: rgba(168,85,247,0.1); border: 1px solid rgba(168,85,247,0.25); color: #c084fc; }
+
+    .cert-badge {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 100px;
+      border: 1px solid;
+    }
+
+    .cert-badge-gold   { color: #fbbf24; background: rgba(251,191,36,0.08); border-color: rgba(251,191,36,0.2); }
+    .cert-badge-blue   { color: #818cf8; background: rgba(99,102,241,0.08); border-color: rgba(99,102,241,0.2); }
+    .cert-badge-green  { color: #4ade80; background: rgba(34,197,94,0.08);  border-color: rgba(34,197,94,0.2);  }
+    .cert-badge-sky    { color: #38bdf8; background: rgba(56,189,248,0.08); border-color: rgba(56,189,248,0.2); }
+    .cert-badge-purple { color: #c084fc; background: rgba(168,85,247,0.08); border-color: rgba(168,85,247,0.2); }
+
+    .cert-card-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.35;
+    }
+
+    .cert-card-issuer {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--accent);
+      font-family: var(--mono);
+      letter-spacing: 0.04em;
+    }
+
+    .cert-card-detail {
+      font-size: 0.8rem;
+      color: var(--text-3);
+    }
+
+    .cert-card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      margin-top: 8px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+      transition: gap var(--transition), opacity var(--transition);
+      width: fit-content;
+    }
+
+    .cert-card-link:hover {
+      opacity: 0.8;
+      gap: 8px;
+    }
+
+    @media (max-width: 900px) {
+      .certs-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     @media (max-width: 640px) {
       .nav-links {
         display: none;
@@ -1261,6 +1387,7 @@
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -1505,10 +1632,12 @@
           <div class="tags">
             <span class="tag sky">AWS</span>
             <span class="tag sky">Azure</span>
+            <span class="tag sky">Google Cloud</span>
             <span class="tag">Python</span>
             <span class="tag">Linux</span>
             <span class="tag">SDN</span>
             <span class="tag">DevOps</span>
+            <span class="tag slate">Data Engineering</span>
           </div>
         </div>
 
@@ -1524,6 +1653,7 @@
             <span class="tag">Data Center</span>
             <span class="tag slate">Private Cloud</span>
             <span class="tag slate">5G</span>
+            <span class="tag slate">Nokia NRS I</span>
           </div>
         </div>
 
@@ -1532,14 +1662,125 @@
           <div class="skill-card-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
           </div>
-          <h3>Automation</h3>
+          <h3>Automation &amp; AI</h3>
           <div class="tags">
             <span class="tag sky">NetDevOps</span>
             <span class="tag">DWDM</span>
             <span class="tag">YANG</span>
             <span class="tag sky">AI/ML</span>
+            <span class="tag sky">Gen AI</span>
+            <span class="tag slate">SQL</span>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" style="padding:110px 0; background:var(--bg-2);">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Validated expertise</p>
+        <h2 class="section-title">Licences &amp; certifications</h2>
+        <p class="section-subtitle">Industry-recognized credentials spanning network engineering, cloud architecture, and modern AI-driven development.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;" class="certs-grid">
+
+        <!-- CCIE -->
+        <div class="cert-card reveal">
+          <div class="cert-card-top">
+            <div class="cert-card-icon cert-icon-gold">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </div>
+            <span class="cert-badge cert-badge-gold">CCIE Expert</span>
+          </div>
+          <h4 class="cert-card-name">Cisco CCIE #3803</h4>
+          <p class="cert-card-issuer">Cisco Systems</p>
+          <p class="cert-card-detail">Routing &amp; Switching · Service Provider</p>
+        </div>
+
+        <!-- Nokia NRS I -->
+        <div class="cert-card reveal">
+          <div class="cert-card-top">
+            <div class="cert-card-icon cert-icon-blue">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <span class="cert-badge cert-badge-blue">Nokia</span>
+          </div>
+          <h4 class="cert-card-name">Nokia NRS I</h4>
+          <p class="cert-card-issuer">Nokia</p>
+          <p class="cert-card-detail">Certified Network Routing Specialist I</p>
+          <a href="https://www.credly.com/badges/de1ff0b0-59d3-4d8f-9dc8-f3b69a85c722" target="_blank" rel="noopener" class="cert-card-link">Ver credencial →</a>
+        </div>
+
+        <!-- Google Cloud DevOps -->
+        <div class="cert-card reveal">
+          <div class="cert-card-top">
+            <div class="cert-card-icon cert-icon-green">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            </div>
+            <span class="cert-badge cert-badge-green">Google Cloud</span>
+          </div>
+          <h4 class="cert-card-name">Preparing for Google Cloud Certification: Cloud DevOps Engineer</h4>
+          <p class="cert-card-issuer">Google / Coursera</p>
+          <p class="cert-card-detail">Professional Certificate · 2023</p>
+          <a href="https://coursera.org/share/05e74d17e7a9a4a72a1d8659d3043647" target="_blank" rel="noopener" class="cert-card-link">Ver credencial →</a>
+        </div>
+
+        <!-- Meta Data Engineer -->
+        <div class="cert-card reveal">
+          <div class="cert-card-top">
+            <div class="cert-card-icon cert-icon-blue">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <span class="cert-badge cert-badge-blue">Meta</span>
+          </div>
+          <h4 class="cert-card-name">Meta Data Engineer Professional Certificate</h4>
+          <p class="cert-card-issuer">Meta / Coursera</p>
+          <p class="cert-card-detail">Professional Certificate · 2023</p>
+        </div>
+
+        <!-- Building Cloud Computing Solutions at Scale -->
+        <div class="cert-card reveal">
+          <div class="cert-card-top">
+            <div class="cert-card-icon cert-icon-sky">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <span class="cert-badge cert-badge-sky">Duke University</span>
+          </div>
+          <h4 class="cert-card-name">Building Cloud Computing Solutions at Scale</h4>
+          <p class="cert-card-issuer">Duke University / Coursera</p>
+          <p class="cert-card-detail">Specialization · 2023</p>
+        </div>
+
+        <!-- Python, Bash and SQL for Data Engineering -->
+        <div class="cert-card reveal">
+          <div class="cert-card-top">
+            <div class="cert-card-icon cert-icon-sky">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <span class="cert-badge cert-badge-sky">Coursera</span>
+          </div>
+          <h4 class="cert-card-name">Python, Bash &amp; SQL Essentials for Data Engineering</h4>
+          <p class="cert-card-issuer">Coursera Specialization</p>
+          <p class="cert-card-detail">Specialization · 2023</p>
+        </div>
+
+        <!-- Claude Code: Gen AI -->
+        <div class="cert-card reveal">
+          <div class="cert-card-top">
+            <div class="cert-card-icon cert-icon-purple">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <span class="cert-badge cert-badge-purple">Anthropic</span>
+          </div>
+          <h4 class="cert-card-name">Claude Code: Software Engineering with Generative AI Agents</h4>
+          <p class="cert-card-issuer">Anthropic / Coursera</p>
+          <p class="cert-card-detail">Course Certificate · 2023</p>
+          <a href="https://coursera.org/account/accomplishments/verify/U6MN1VQ8S0JF" target="_blank" rel="noopener" class="cert-card-link">Ver credencial →</a>
+        </div>
+
       </div>
     </div>
   </section>
@@ -1836,16 +2077,25 @@
         </div>
 
         <div class="cert-panel reveal">
-          <h3>Certifications &amp; recognition</h3>
-          <p>A career built on deep technical mastery, recognized by the industry's most demanding certifications.</p>
+          <h3>Quick stats</h3>
+          <p>A career built on deep technical mastery, spanning over two decades across LATAM.</p>
           <div class="cert-list">
             <div class="cert-item">
               <div class="cert-icon">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
               </div>
               <div>
-                <div class="cert-text">Cisco CCIE #3803</div>
-                <div class="cert-sub">Routing &amp; Switching Expert</div>
+                <div class="cert-text">7+ certifications</div>
+                <div class="cert-sub">Cisco · Nokia · Google · Meta · Anthropic</div>
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <div>
+                <div class="cert-text">CCIE #3803</div>
+                <div class="cert-sub">Cisco's highest technical honor</div>
               </div>
             </div>
             <div class="cert-item">
@@ -1853,29 +2103,24 @@
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
               </div>
               <div>
-                <div class="cert-text">AWS Solutions Architect</div>
-                <div class="cert-sub">Advanced Networking Specialty</div>
+                <div class="cert-text">Multi-cloud certified</div>
+                <div class="cert-sub">AWS · Azure · Google Cloud</div>
               </div>
             </div>
             <div class="cert-item">
               <div class="cert-icon">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
               </div>
               <div>
-                <div class="cert-text">Microsoft Azure</div>
-                <div class="cert-sub">Cloud infrastructure</div>
-              </div>
-            </div>
-            <div class="cert-item">
-              <div class="cert-icon">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              </div>
-              <div>
-                <div class="cert-text">20+ years in networking</div>
-                <div class="cert-sub">ISP · Enterprise · Cloud · 5G</div>
+                <div class="cert-text">AI &amp; Data Engineering</div>
+                <div class="cert-sub">Generative AI · Python · SQL · Data pipelines</div>
               </div>
             </div>
           </div>
+          <a href="#certifications" style="display:inline-flex;align-items:center;gap:6px;margin-top:20px;font-size:0.82rem;font-weight:600;color:var(--accent);text-decoration:none;transition:gap var(--transition)" onmouseover="this.style.gap='10px'" onmouseout="this.style.gap='6px'">
+            Ver todas las certificaciones
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
         </div>
       </div>
     </div>
