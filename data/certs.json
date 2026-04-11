@@ -1,0 +1,68 @@
+{
+  "_instructions": "Agrega aquí tus nuevas certificaciones. El script update_portfolio.py actualizará index.html automáticamente al hacer push.",
+  "certifications": [
+    {
+      "name": "Cisco CCIE #3803",
+      "issuer": "Cisco Systems",
+      "detail": "Routing & Switching · Service Provider",
+      "badge_label": "CCIE Expert",
+      "badge_color": "gold",
+      "icon": "award",
+      "credential_url": null
+    },
+    {
+      "name": "Nokia NRS I",
+      "issuer": "Nokia",
+      "detail": "Certified Network Routing Specialist I",
+      "badge_label": "Nokia",
+      "badge_color": "blue",
+      "icon": "signal",
+      "credential_url": "https://www.credly.com/badges/de1ff0b0-59d3-4d8f-9dc8-f3b69a85c722"
+    },
+    {
+      "name": "Preparing for Google Cloud Certification: Cloud DevOps Engineer",
+      "issuer": "Google / Coursera",
+      "detail": "Professional Certificate · 2023",
+      "badge_label": "Google Cloud",
+      "badge_color": "green",
+      "icon": "cloud",
+      "credential_url": "https://coursera.org/share/05e74d17e7a9a4a72a1d8659d3043647"
+    },
+    {
+      "name": "Meta Data Engineer Professional Certificate",
+      "issuer": "Meta / Coursera",
+      "detail": "Professional Certificate · 2023",
+      "badge_label": "Meta",
+      "badge_color": "blue",
+      "icon": "database",
+      "credential_url": null
+    },
+    {
+      "name": "Building Cloud Computing Solutions at Scale",
+      "issuer": "Duke University / Coursera",
+      "detail": "Specialization · 2023",
+      "badge_label": "Duke University",
+      "badge_color": "sky",
+      "icon": "monitor",
+      "credential_url": null
+    },
+    {
+      "name": "Python, Bash & SQL Essentials for Data Engineering",
+      "issuer": "Coursera Specialization",
+      "detail": "Specialization · 2023",
+      "badge_label": "Coursera",
+      "badge_color": "sky",
+      "icon": "code",
+      "credential_url": null
+    },
+    {
+      "name": "Claude Code: Software Engineering with Generative AI Agents",
+      "issuer": "Anthropic / Coursera",
+      "detail": "Course Certificate · 2023",
+      "badge_label": "Anthropic",
+      "badge_color": "purple",
+      "icon": "clock",
+      "credential_url": "https://coursera.org/account/accomplishments/verify/U6MN1VQ8S0JF"
+    }
+  ]
+}
